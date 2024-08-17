@@ -5,7 +5,7 @@ from time import strftime
 myWindow = Tk()
 myWindow.title('Ryan\'s Clock')
 
-#clock funct def
+#clock function definition
 def time():
     myTime = strftime('%H:%M:%S %p')
     clock.config(text = myTime)
@@ -16,6 +16,9 @@ clock = Label(myWindow, font = ('arial', 40, 'bold'),
                                 background = 'black',
                                 foreground = 'dark green')
 clock.pack(anchor = 'center')
+
+#call time function
 time()
 
+#infinite tkinder main function loop
 mainloop()
